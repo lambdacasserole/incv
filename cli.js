@@ -63,7 +63,7 @@ function logInfo(msg) {
 
     // Only write output if quiet mode is not enabled.
     if (!IS_QUIET) {
-        process.stdout.write(`${chalk.blue('Info:')} ${msg}${EOL}`);
+        process.stdout.write(`${chalk.blue('info:')} ${msg}${EOL}`);
     }
 }
 
@@ -74,7 +74,7 @@ function logInfo(msg) {
  * @param {number} exitCode the exit code to use
  */
 function fatal(msg, exitCode = 1) {
-    process.stderr.write(`${chalk.red('Fatal:')} ${msg}${EOL}`);
+    process.stderr.write(`${chalk.red('fatal:')} ${msg}${EOL}`);
     exit(exitCode);
 }
 
