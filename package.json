@@ -1,0 +1,34 @@
+{
+  "name": "incv",
+  "version": "1.0.0",
+  "description": "Simple version bumping tool for Node.js, with customizable tags.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambdacasserole/incv.git"
+  },
+  "keywords": [
+    "version",
+    "bump",
+    "npm",
+    "tag"
+  ],
+  "author": "Saul Johnson <saul.a.johnson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambdacasserole/incv/issues"
+  },
+  "homepage": "https://github.com/lambdacasserole/incv#readme",
+  "bin": {
+    "incv": "./cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "meow": "^10.1.2",
+    "semver": "^7.3.7"
+  }
+}
