@@ -132,26 +132,32 @@ You should see help documentation printed.
 You can use `incv --help` for detailed information on using the utility:
 
 ```
-Simple version bumping tool for Node.js, with customizable tags.
+  Simple version bumping tool for Node.js, with customizable tags.
 
-Usage
-  $ incv [options]
+  Usage
+    $ incv [options]
 
-Options
-  --commit-message, -c  The commit message to use to bump the version (default: '')
-  --major-tag           The major version bump tag to search for in commit messages (default: '[major]')
-  --minor-tag           The minor version bump tag to search for in commit messages (default: '[minor]')
-  --patch-tag           The patch version bump tag to search for in commit messages (default: '[patch]')
-  --major               Specifies that a major version bump should be performed (default: false)
-  --minor               Specifies that a minor version bump should be performed (default: false)
-  --patch               Specifies that a patch version bump should be performed (default: true)
-  --dry                 Specifies that the bumped version should not be written to disk (default: false)
-  --quiet               Suppresses informational output (default: false)
-Boolean options can be inverted by prefixing '--no-' (e.g. '--no-patch').
+  Options
+    --commit-message, -c  The commit message to use to bump the version (default: '')
+    --major-tag           The major version bump tag to search for in commit messages (default: '[major]')
+    --minor-tag           The minor version bump tag to search for in commit messages (default: '[minor]')
+    --patch-tag           The patch version bump tag to search for in commit messages (default: '[patch]')
+    --prerelease-tag      The prerelease version bump tag to search for in commit messages (default: '[prerelease]')
+    --build-tag           The build version bump tag to search for in commit messages (default: '[build]')
+    --prerelease-token    The prerelease token to prepend to the prerelease version (default: 'prerelease')
+    --build-token         The build token to prepend to the build version (default: '')
+    --major               Specifies that a major version bump should be performed (default: false)
+    --minor               Specifies that a minor version bump should be performed (default: false)
+    --patch               Specifies that a patch version bump should be performed (default: true)
+    --prerelease          Specifies that a prerelease version bump should be performed (default: false)
+    --build               Specifies that a build version bump should be performed (default: false)
+    --dry                 Specifies that the bumped version should not be written to disk (default: false)
+    --quiet               Suppresses informational output (default: false)
+  Boolean options can be inverted by prefixing '--no-' (e.g. '--no-patch').
 
-Examples
-  $ incv --major # Major version bump.
-  $ incv --commit-message='[major] First major release!' # Major version bump via commit message.
+  Examples
+    $ incv --major # Major version bump.
+    $ incv --commit-message='[major] First major release!' # Major version bump via commit message.
 ```
 
 ### Example: Bump Minor Version
