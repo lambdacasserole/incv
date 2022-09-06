@@ -1,6 +1,6 @@
 {
   "name": "incv",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Simple version bumping tool for Node.js, with customizable tags.",
   "type": "module",
   "main": "index.js",
